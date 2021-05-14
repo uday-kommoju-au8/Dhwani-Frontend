@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter,Route} from 'react-router-dom'
+import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import Home from "./componenets/home"
 
 ReactDOM.render(
   <BrowserRouter>
-  <switch>
+  <Switch>
   <Route exact path="/home" component={Home} />
     <App />
-    </switch>
+    </Switch>
   </BrowserRouter>,
   document.getElementById('root')
 );
